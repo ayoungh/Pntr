@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BrowserArt } from "@/components/browser-art";
 import { ArrowRight, ArrowUpRight } from "@/components/icons";
 import { Nav } from "@/components/nav";
+import { REPOSITORY_URL } from "@/lib/site";
 
 const principles = [
   {
@@ -73,7 +74,12 @@ export default function Home() {
             An open-source Next.js canvas for expressive, beautifully built
             websites.
           </p>
-          <a className="ink-button mt-8" href="#work">
+          <a
+            className="ink-button mt-8"
+            href={REPOSITORY_URL}
+            rel="noreferrer"
+            target="_blank"
+          >
             <span>Get the template</span>
             <i>
               <ArrowRight className="size-5" />
@@ -179,7 +185,7 @@ export default function Home() {
             </h2>
             <a
               className="outline-button shrink-0"
-              href="https://github.com"
+              href={REPOSITORY_URL}
               rel="noreferrer"
               target="_blank"
             >
@@ -255,7 +261,12 @@ export default function Home() {
             is waiting.
           </h2>
           <div className="mt-10 flex flex-col items-center justify-center gap-5 sm:flex-row">
-            <a className="ink-button" href="#top">
+            <a
+              className="ink-button"
+              href={REPOSITORY_URL}
+              rel="noreferrer"
+              target="_blank"
+            >
               <span>Start painting</span>
               <i>
                 <ArrowRight className="size-5" />
@@ -263,7 +274,7 @@ export default function Home() {
             </a>
             <a
               className="inline-flex items-center gap-2 border-b-2 border-white pb-1 text-lg font-bold"
-              href="https://github.com"
+              href={REPOSITORY_URL}
               rel="noreferrer"
               target="_blank"
             >
@@ -292,7 +303,7 @@ export default function Home() {
             </a>
             <a
               className="footer-link"
-              href="https://github.com"
+              href={REPOSITORY_URL}
               rel="noreferrer"
               target="_blank"
             >

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { REPOSITORY_URL } from "@/lib/site";
 import { ArrowUpRight, CloseIcon, MenuIcon } from "./icons";
 
 const links = [
@@ -48,7 +49,7 @@ export function Nav() {
 
         <a
           className="hidden items-center gap-2 rounded-full border border-white/35 bg-white/12 px-5 py-2.5 text-sm font-semibold transition hover:bg-white hover:text-ink md:flex"
-          href="https://github.com"
+          href={REPOSITORY_URL}
           rel="noreferrer"
           target="_blank"
         >
@@ -80,7 +81,7 @@ export function Nav() {
           ))}
           <a
             className="mt-2 flex items-center justify-between rounded-2xl bg-white px-5 py-3 font-bold text-ink"
-            href="https://github.com"
+            href={REPOSITORY_URL}
             rel="noreferrer"
             target="_blank"
           >

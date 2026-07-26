@@ -4,6 +4,14 @@
   "private": true,
   "author": "Anthony Young",
   "license": "MIT",
+  "homepage": "https://github.com/ayoungh/Pntr#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoungh/Pntr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayoungh/Pntr/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
